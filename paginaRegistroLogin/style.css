@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+    font-family: 'Arial', sans-serif;
+    padding: 10px; /* Añadido para evitar que el contenido quede muy pegado en pantallas pequeñas */
+}
+
+.container {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 360px; /* Reducido el ancho para que se vea más pequeño */
+    max-width: 100%;
+}
+
+.form-wrapper {
+    display: flex;
+    position: relative;
+    justify-content: center; /* Añadido para centrar */
+}
+
+.form {
+    display: none;
+    flex-direction: column;
+    padding: 30px; /* Reducido padding para que no se vea tan grande */
+    text-align: center;
+}
+
+.form.active {
+    display: flex;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 22px; /* Reducido tamaño del texto */
+    color: #333;
+}
+
+input {
+    border: none;
+    border-radius: 25px;
+    background: #f3f3f3;
+    padding: 12px; /* Reducido padding de los campos */
+    margin-bottom: 15px;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+}
+
+button {
+    background-color: #6a56d9;
+    color: white;
+    padding: 12px; /* Reducido tamaño del botón */
+    border: none;
+    border-radius: 25px;
+    font-size: 14px; /* Reducido tamaño de fuente */
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4e3bbd;
+}
+
+.social-login {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.social-icons img {
+    width: 35px; /* Reducido tamaño de los iconos */
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 13px; /* Reducido tamaño del texto */
+    color: #666;
+}
+
+.switch-form {
+    font-size: 13px; /* Reducido tamaño de la opción de cambiar */
+    color: #6a56d9;
+    cursor: pointer;
+    right: 50px;
+}
+
+.switch-form span {
+    text-decoration: underline;
+}
+
+.forgot-password {
+    font-size: 12px;
+    color: #999;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input, button {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px; /* Ajustado tamaño de fuente para pantallas pequeñas */
+    }
+
+    .social-icons img {
+        width: 30px; /* Reducido tamaño de iconos en móviles */
+    }
+}
