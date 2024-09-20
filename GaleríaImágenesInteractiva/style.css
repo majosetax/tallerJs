@@ -30,12 +30,11 @@ body {
     background-color: #4e3bbd;
 }
 
-/* Masonry Layout */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajuste el tamaño de las miniaturas */
-    grid-auto-flow: dense; /* Para asegurar que las miniaturas ocupen todo el espacio */
-    gap: 10px; /* Espacio pequeño entre miniaturas */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    grid-auto-flow: dense; 
+    gap: 10px;  
 }
 
 .gallery-item {
@@ -44,8 +43,8 @@ body {
 
 .gallery-item img {
     width: 100%;
-    height: 150px; /* Tamaño fijo para las miniaturas */
-    object-fit: cover; /* Mantiene las miniaturas con un ajuste adecuado */
+    height: 150px; 
+    object-fit: cover;
     transition: transform 0.3s;
     cursor: pointer;
 }
@@ -83,32 +82,28 @@ body {
     cursor: pointer;
 }
 
-/* Responsive Design */
 
-/* Para pantallas grandes de escritorio */
 @media (min-width: 1200px) {
     .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Miniaturas más grandes en pantallas grandes */
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 }
 
-/* Para pantallas de laptops y tablets grandes */
 @media (max-width: 1199px) and (min-width: 768px) {
     .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Tamaño medio para pantallas medianas */
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
     }
 }
 
-/* Para tablets pequeñas y celulares grandes */
 @media (max-width: 767px) and (min-width: 480px) {
     .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Miniaturas más pequeñas en tablets */
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
 }
 
-/* Para celulares pequeños */
+
 @media (max-width: 479px) {
     .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Miniaturas aún más pequeñas en móviles */
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));/
     }
 }
