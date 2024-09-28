@@ -15,13 +15,10 @@ function calculateTip() {
     return;
   }
 
-  // Calcular propina por persona
   const tipAmountPerPerson = (total * (tipPercentage / 100)) / numberOfPeople;
 
-  // Calcular el total por persona
   const totalPerPerson = (total / numberOfPeople) + tipAmountPerPerson;
 
-  // Actualizar los resultados en la interfaz
   tipResultDisplay.textContent = `$${tipAmountPerPerson.toFixed(2)}`;
   totalResultDisplay.textContent = `$${totalPerPerson.toFixed(2)}`;
 }
