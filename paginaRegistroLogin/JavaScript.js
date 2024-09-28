@@ -34,8 +34,7 @@ function validateEmail(email) {
 function validatePassword(password) {
     return password.length >= 8;
 }
-
-// Cambiar entre los formularios
+s
 function showLoginForm() {
     document.getElementById('loginForm').classList.add('active');
     document.getElementById('registerForm').classList.remove('active');

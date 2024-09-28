@@ -11,7 +11,7 @@ body {
     height: 100vh;
    
     font-family: 'Arial', sans-serif;
-    padding: 10px; /* Añadido para evitar que el contenido quede muy pegado en pantallas pequeñas */
+    padding: 10px;
 }
 
 .container {
@@ -19,20 +19,20 @@ body {
     border-radius: 5px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 360px; /* Reducido el ancho para que se vea más pequeño */
+    width: 360px;
     max-width: 100%;
 }
 
 .form-wrapper {
     display: flex;
     position: relative;
-    justify-content: center; /* Añadido para centrar */
+    justify-content: center; 
 }
 
 .form {
     display: none;
     flex-direction: column;
-    padding: 30px; /* Reducido padding para que no se vea tan grande */
+    padding: 30px;
     text-align: center;
 }
 
@@ -42,7 +42,7 @@ body {
 
 h2 {
     margin-bottom: 20px;
-    font-size: 22px; /* Reducido tamaño del texto */
+    font-size: 22px;
     color: #333;
 }
 
@@ -50,7 +50,7 @@ input {
     border: none;
     border-radius: 25px;
     background: #f3f3f3;
-    padding: 12px; /* Reducido padding de los campos */
+    padding: 12px;
     margin-bottom: 15px;
     font-size: 14px;
     width: 100%;
@@ -60,10 +60,10 @@ input {
 button {
     background-color: #6a56d9;
     color: white;
-    padding: 12px; /* Reducido tamaño del botón */
+    padding: 12px; 
     border: none;
     border-radius: 25px;
-    font-size: 14px; /* Reducido tamaño de fuente */
+    font-size: 14px; 
     cursor: pointer;
     margin-bottom: 15px;
     transition: background-color 0.3s ease;
@@ -79,18 +79,18 @@ button:hover {
 }
 
 .social-icons img {
-    width: 35px; /* Reducido tamaño de los iconos */
+    width: 35px;
     margin: 0 8px;
     cursor: pointer;
 }
 
 p {
-    font-size: 13px; /* Reducido tamaño del texto */
+    font-size: 13px; 
     color: #666;
 }
 
 .switch-form {
-    font-size: 13px; /* Reducido tamaño de la opción de cambiar */
+    font-size: 13px;
     color: #6a56d9;
     cursor: pointer;
     right: 50px;
@@ -118,10 +118,10 @@ p {
     }
 
     h2 {
-        font-size: 18px; /* Ajustado tamaño de fuente para pantallas pequeñas */
+        font-size: 18px;
     }
 
     .social-icons img {
-        width: 30px; /* Reducido tamaño de iconos en móviles */
+        width: 30px;
     }
 }
