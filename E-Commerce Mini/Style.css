@@ -16,7 +16,7 @@ body {
   
   header h1 {
     margin: 0;
-    color: #27ae60;
+    
   }
   
   header input {
@@ -27,7 +27,7 @@ body {
   }
   
   header button {
-    background-color: #27ae60;
+    background-color: blueviolet;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -67,9 +67,9 @@ body {
     padding: 20px;
     background-color: #fff;
     display: flex;
-    gap: 20px; /* Espacio entre los productos */
-    flex-wrap: wrap; /* Permite que los productos se ajusten si no caben en una fila */
-    justify-content: center; /* Centra los productos horizontalmente */
+    gap: 20px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
   }
   
   .product {
@@ -78,13 +78,12 @@ body {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    width: 200px; /* Fijamos un ancho para que todos los productos tengan el mismo tamaño */
+    width: 200px; 
   }
   
   
   .product img {
-    width: 100px;  /* Cambiar el tamaño aquí para hacer las imágenes más pequeñas */
-    height: auto;
+    width: 100px;  
     border-radius: 10px;
     object-fit: cover;
   }
@@ -104,7 +103,7 @@ body {
   
   button.add-to-cart {
     margin-top: 10px;
-    background-color: #27ae60;
+    background-color: blueviolet;
     color: #fff;
     border: none;
     padding: 10px;
