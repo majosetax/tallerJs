@@ -1,0 +1,76 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1c92d2, #f2fcfe); /* Fondo degradado */
+    color: white;
+}
+
+.countdown-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.time-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 120px;
+    text-align: center;
+}
+
+.time-section span {
+    display: block;
+}
+
+#days, #hours, #minutes, #seconds {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.description {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 30px;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+#start-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #f2fcfe;
+    color: #1c92d2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-button:hover {
+    background-color: #1c92d2;
+    color: white;
+}
