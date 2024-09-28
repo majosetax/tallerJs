@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Calculadora De Propinas</h1>
+        <div class="input-container">
+            <label for="total">Monto Total ($):</label>
+            <input type="number" id="total">
+        </div>
+
+        <div class="input-container">
+            <label for="tip">Porcentaje de la propina (%):</label>
+            <input type="number" id="tip">
+        </div>
+
+        <div class="input-container">
+            <label for="people">Numero de Personas: </label>
+            <input type="number" id="people">
+        </div>
+
+        <div class="result-container">
+            <h2>Propina por persona:</h2>
+            <p id="tip-result">$0.000</p>
+            <h2>Total por persona:</h2>
+            <p  id="total-result">$0.000</p>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
