@@ -29,8 +29,8 @@ h1 {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 100px); /* Ajustar el tamaño de la cuadrícula */
-  gap: 10px; /* Añadir espacio entre las cartas */
+  grid-template-columns: repeat(4, 100px); 
+  gap: 10px;
   justify-content: center;
 }
 
@@ -39,7 +39,7 @@ h1 {
   height: 100px;
   perspective: 1000px;
   cursor: pointer;
-  border-radius: 10px; /* Redondear las esquinas */
+  border-radius: 10px; 
 }
 
 .card-inner {
