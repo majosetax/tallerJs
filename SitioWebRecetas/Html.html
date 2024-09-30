@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetario Interactivo</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!-- Cabecera con barra de búsqueda -->
+    <header>
+        <div class="logo">Recetas Deliciosas</div>
+        <input type="text" id="searchInput" placeholder="Buscar receta por ingrediente" oninput="filterRecipes()">
+    </header>
+
+    <!-- Listado de recetas -->
+    <main>
+        <section class="recipe-section">
+            <h2>Recetas</h2>
+            <div class="recipe-grid">
+                
+                <div class="recipe-card">
+                    <img src="img/ArrozPollo.jpg" alt="Arroz con Pollo">
+                    <h3>Arroz con Pollo</h3>
+                    <p>Disfruta de un delicioso arroz amarillo con pollo,salchicha,zanahoria y pimenton</p>
+                    <div class="ingredients">
+                        <strong>Ingredientes: </strong>Arroz, Pollo, Salchicha, Zanahoria, Pimenton
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <img src="img/Frape.jpg" alt="Frappe de cafe">
+                    <h3>Frappe de Café</h3>
+                    <p>Para esta tarde tan soleada prueba este delioso frape de cafe adornado con crema chantilli</p>
+                    <div class="ingredients">
+                        <strong>Ingredientes: </strong>Cafe, Leche, Hielo, Chocolate, Crema chantilli
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <img src="img/EnsaladaTomate.jpg" alt="Ensalada de Tomate">
+                    <h3>Ensalada de Tomate</h3>
+                    <p>Una ensalada fresca y deliciosa de tomate con cebolla y aceite de oliva.</p>
+                    <div class="ingredients">
+                        <strong>Ingredientes:</strong> Tomate, Cebolla, Aceite de oliva
+                    </div>
+                </div>
+                
+                <div class="recipe-card">
+                    <img src="img/jugoMaracuya.jpg" alt="Jugo de Maracuya">
+                    <h3>Jugo de Maracuya</h3>
+                    <p>Ven y prueba este delisioso y refrescante jugo de maracuya</p>
+                    <div class="ingredients">
+                        <strong>Ingredientes: </strong> Maracuya,Agua, Hielo, Azucar
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <img src="img/Patatas.jpg" alt="Tortilla de Patatas">
+                    <h3>Tortilla de Patatas</h3>
+                    <p>Una clásica tortilla española</p>
+                    <div class="ingredients">
+                        <strong>Ingredientes:</strong> Auevo, Patata, Aceite
+                    </div>
+                </div>
+                <div  class="recipe-card">
+                    <img src="img/Limonada.jpg" alt="Limonada">
+                    <h3>Limonada</h3>
+                    <p>Limonada casera, Rica e ideal para combatiir el calor</p>
+                    <div class="ingredients">
+                        <strong>Ingredientes: </strong>Limon, Hielo, agua,azucar
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <img src="img/PolloCurry.jpg" alt="Pollo al Curry">
+                    <h3>Pollo al Curry</h3>
+                    <p>Un plato sabroso y picante de pollo al curry con leche de coco.</p>
+                    <div class="ingredients">
+                        <strong>Ingredientes:</strong> Pollo, Curry, Leche de coco
+                    </div>
+                </div>
+            
+
+                <div class="recipe-card">
+                    <img src="img/Guacamole.jpg" alt="Guacamole">
+                    <h3>Guacamole</h3>
+                    <p>Un dip cremoso de aguacate</p>
+                    <div class="ingredients">
+                        <strong>Ingredientes:</strong> Aguacate, Tomate, Limón, Cilantro, Cebolla
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <script src="Script.js"></script>
+</body>
+</html>
