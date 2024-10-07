@@ -3,100 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mini Carrito de Compras</title>
+  <title>Carrito de Compras Andsm Coffee</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
-    <h1>Andsm Coffee </h1>
-    <input type="text" placeholder="Buscar productos">
+    <h1>Cafeteria Anya</h1>
+    <input type="text" placeholder="Buscar...">
     <button>Buscar</button>
   </header>
 
-  <h2>Menú</h2>
-  
-  <div class="product-list">
-    <div class="product">
-      <img src="img/Limonada.jpg" alt="Limonada">
-      <h2>Limonada</h2>
-      <p>Precio: $8.000</p>
-      <button class="add-to-cart" data-name="Limonada" data-price="8.000">Añadir al Carrito</button>
-    </div>
-    
-    <div class="product">
+  <h2>Productos</h2>
+  <div class="main-section">
+    <div class="product-area">
+      <div class="product-item">
+        <img src="img/Limonada.jpg" alt="Limonada">
+        <h2>Limonada</h2>
+        <p>Precio: $8.000</p>
+        <button class="add-to-basket" data-product="Limonada" data-cost="8.000">Añadir al Carrito</button>
+      </div>
+      
+      <div class="product-item">
         <img src="img/Cafe.jpg" alt="Cafe">
         <h2>Café</h2>
         <p>Precio: $4.000</p>
-        <button class="add-to-cart" data-name="Cafe" data-price="4.000">Añadir al Carrito</button>
+        <button class="add-to-basket" data-product="Cafe" data-cost="4.000">Añadir al Carrito</button>
       </div>
 
-    <div class="product">
-      <img src="img/Sandwich.jpg" alt="Sandwich">
-      <h2>Sandwich</h2>
-      <p>Precio: $10.000</p>
-      <button class="add-to-cart" data-name="Sandwich" data-price="10.000">Añadir al Carrito</button>
-    </div>
+      <div class="product-item">
+        <img src="img/Sandwich.jpg" alt="Sandwich">
+        <h2>Sandwich</h2>
+        <p>Precio: $10.000</p>
+        <button class="add-to-basket" data-product="Sandwich" data-cost="10.000">Añadir al Carrito</button>
+      </div>
 
-    <div class="product">
-      <img src="img/AguaJamaica.jpg" alt="AguaJamaica">
-      <h2>Agua de Jamaica</h2>
-      <p>Precio: $11.000</p>
-      <button class="add-to-cart" data-name="AguaJamaica" data-price="11.000">Añadir al Carrito</button>
-    </div>
+      <div class="product-item">
+        <img src="img/AguaJamaica.jpg" alt="Agua de Jamaica">
+        <h2>Agua de Jamaica</h2>
+        <p>Precio: $11.000</p>
+        <button class="add-to-basket" data-product="AguaJamaica" data-cost="11.000">Añadir al Carrito</button>
+      </div>
 
-    <div class="product">
-        <img src="img/Brawnies.jpg" alt="Brawnies">
+      <div class="product-item">
+        <img src="img/Brawnies.jpg" alt="Brawnie">
         <h2>Brawnie</h2>
         <p>Precio: $3.000</p>
-        <button class="add-to-cart" data-name="Brawnies" data-price="3.000">Añadir al Carrito</button>
+        <button class="add-to-basket" data-product="Brawnies" data-cost="3.000">Añadir al Carrito</button>
       </div>
 
-    <div class="product">
-      <img src="img/chocolate.jpg" alt="Chocolate">
-      <h2>Chocolate</h2>
-      <p>Precio: $6.000</p>
-      <button class="add-to-cart" data-name="Chocolate" data-price="6.000">Añadir al Carrito</button>
-    </div>
+      <div class="product-item">
+        <img src="img/chocolate.jpg" alt="Chocolate">
+        <h2>Chocolate</h2>
+        <p>Precio: $6.000</p>
+        <button class="add-to-basket" data-product="Chocolate" data-cost="6.000">Añadir al Carrito</button>
+      </div>
 
-    <div class="product">
-      <img src="img/Blue Lagoon Mocktail.jpg" alt="Blue Laggon Mocktail">
-      <h2>Blue Laggon Mocktail</h2>
-      <p>Precio: $20.000</p>
-      <button class="add-to-cart" data-name="Blue Laggon Mocktail" data-price="20.000">Añadir al Carrito</button>
-    </div>
-    
-    <div class="product">
-      <img src="img/pizza.jpg" alt="Pizza">
-      <h2>Pizza</h2>
-      <p>Precio: $7.000</p>
-      <button class="add-to-cart" data-name="Pizza" data-price="7.000">Añadir al Carrito</button>
-    </div>
-    
-    <div class="product">
-      <img src="img/Latte Macchiato.jpg" alt="Latte Macchiato">
-      <h2>Latte Macchiato</h2>
-      <p>Precio: $12.000</p>
-      <button class="add-to-cart" data-name="Latte Macchiato" data-price="12.000">Añadir al Carrito</button>
-    </div>
-    <div class="product">
+      <div class="product-item">
+        <img src="img/Blue Lagoon Mocktail.jpg" alt="Blue Lagoon Mocktail">
+        <h2>Blue Lagoon Mocktail</h2>
+        <p>Precio: $20.000</p>
+        <button class="add-to-basket" data-product="Blue Lagoon Mocktail" data-cost="20.000">Añadir al Carrito</button>
+      </div>
+      
+      <div class="product-item">
+        <img src="img/pizza.jpg" alt="Pizza">
+        <h2>Pizza</h2>
+        <p>Precio: $7.000</p>
+        <button class="add-to-basket" data-product="Pizza" data-cost="7.000">Añadir al Carrito</button>
+      </div>
+      
+      <div class="product-item">
+        <img src="img/Latte Macchiato.jpg" alt="Latte Macchiato">
+        <h2>Latte Macchiato</h2>
+        <p>Precio: $12.000</p>
+        <button class="add-to-basket" data-product="Latte Macchiato" data-cost="12.000">Añadir al Carrito</button>
+      </div>
+      
+      <div class="product-item">
         <img src="img/TortaChocolate.jpg" alt="Torta de Chocolate">
         <h2>Torta de Chocolate</h2>
         <p>Precio: $2.000</p>
-        <button class="add-to-cart" data-name="Torta de Chocolate" data-price="2.000">Añadir al Carrito</button>
+        <button class="add-to-basket" data-product="Torta de Chocolate" data-cost="2.000">Añadir al Carrito</button>
       </div>
+    </div>
+
+    <div class="basket">
+      <h2>Carrito</h2>
+      <div id="item-container">
+        <p>No hay productos en el carrito.</p>
+      </div>
+      <h3>Total: $<span id="price-display">0.000</span></h3>
+      <button id="pay" style="display: none;">Pagar</button>
+    </div>
   </div>
 
-
-  <h2>Tu Carrito</h2>
-  <div id="cart-items">
-    <p>El carrito está vacío.</p>
-  </div>
-
-  <h3>Total: $<span id="total-price">0.000</span></h3>
-<button id="checkout" style="display: none;">Checkout</button>
-
-
-  <script src="script.js"></script>
+  <script src="Script.js"></script>
 </body>
 </html>

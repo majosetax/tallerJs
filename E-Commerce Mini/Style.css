@@ -1,123 +1,125 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  header {
-    background-color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  header h1 {
-    margin: 0;
-    
-  }
-  
-  header input {
-    width: 50%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  header button {
-    background-color: blueviolet;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .menu-category {
-    padding: 20px;
-    background-color: #fff;
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .categories {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .categories button {
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-  }
-  
-  .product-list {
-    padding: 20px;
-    background-color: #fff;
-    display: flex;
-    gap: 20px; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-  }
-  
-  .product {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 200px; 
-  }
-  
-  
-  .product img {
-    width: 100px;  
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  
+header {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-  
-  .cart {
-    position: fixed;
-    right: 20px;
-    top: 20px;
-    width: 300px;
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+header h1 {
+  margin: 0;
+}
+
+header input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+header button {
+  background-color:  rgb(191, 117, 187);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.add-to-basket, #pay {
+  margin-top: 10px;
+  background-color: rgb(191, 117, 187);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* Main structure with Flexbox */
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+}
+
+.product-area {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between; /* Espaciado entre los productos */
+}
+
+.product-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 10px;
+  width: calc(20% - 10px); /* Tres productos en fila, con espacio */
+}
+
+.product-item img {
+  width: 100%;
+  height: 500px;
+
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 1200px) {
+  .product-item {
+    width: calc(30% - 20px); /* Dos productos en fila en pantallas más pequeñas */
   }
-  
-  button.add-to-cart {
-    margin-top: 10px;
-    background-color: blueviolet;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .product-item {
+    width: calc(50% - 20px); /* Dos productos en fila en pantallas más pequeñas */
   }
-  
-  button#checkout {
-    width: 100%;
-    padding: 10px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .product-item {
+    width: calc(100% - 20px); /* Un producto en fila en pantallas muy pequeñas */
   }
-  
+}
+
+.basket {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 500px; /* Fix the width of the basket */
+  height: fit-content; /* Allow height to adjust based on content */
+}
+
+.basket-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.basket-item button {
+  background-color: rgb(191, 117, 187);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
